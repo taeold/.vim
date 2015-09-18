@@ -3,10 +3,18 @@ syntax on
 filetype plugin indent on
 set nu
 set ruler
+" End of line whitespace
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
+:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+
 colorscheme railscasts
+
+" Ah tabs!
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
