@@ -56,3 +56,8 @@ let g:rbpt_colorpairs = [
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
     \ ]
+
+" Clojure Static
+let g:clojure_syntax_keywords = {
+    \ 'clojureMacro': ["defproject", "defcustom", "deftest"],
+    \ 'clojureFunc': ["string/join", "string/replace"]}
