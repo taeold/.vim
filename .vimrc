@@ -69,3 +69,9 @@ let g:rbpt_colorpairs = [
 let g:clojure_syntax_keywords = {
     \ 'clojureMacro': ["defproject", "defcustom", "deftest"],
     \ 'clojureFunc': ["string/join", "string/replace"]}
+
+" CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
