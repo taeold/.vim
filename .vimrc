@@ -3,10 +3,13 @@ syntax on
 filetype plugin indent on
 set nu
 set ruler
+set cc=80
+match ErrorMsg '\%>80v.\+'
+
 " End of line whitespace
 :highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
 colorscheme railscasts
 
